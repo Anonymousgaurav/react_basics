@@ -9,6 +9,30 @@ StyleSheet,
 } from 'react-native';
 
 
+
+
+const users = [
+  {
+    id : 1,
+    name : 'Sourav'
+  },
+  {
+    id : 2,
+    name : 'Gaurav'
+  },{
+    id : 3,
+    name : 'Vishal'
+  },{
+    id : 4,
+    name : 'Chandan'
+  },{
+    id : 5,
+    name : 'Vivek'
+  },
+  
+]
+
+
 function App() {
   return(
  <View style = {{ flex : 1,
@@ -16,11 +40,10 @@ function App() {
               flexWrap : 'wrap'
 }}>
 
+{
 
-
-<Text  style={styles.item}> Sourav </Text>
-<Text  style={styles.item}> Gaurav </Text>
-<Text  style={styles.item}> Vishal </Text>
+users.map((item) => <Text style={styles.item}> {item.name}</Text>)
+}
   </View>
   )
 }
