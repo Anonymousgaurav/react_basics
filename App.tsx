@@ -1,17 +1,48 @@
 import React from 'react';
 import {
-  Button,
-  SafeAreaView,
-  Text
+FlatList,
+Text,
+View
+
 } from 'react-native';
+
+
+const users = [
+  {
+    id : 1,
+    name : "Anil"
+  },
+
+  {
+    id : 2,
+    name : "Babloo"
+  },
+
+  {
+    id : 3,
+    name : "Chinmoy"
+  },
+
+  {
+    id : 4,
+    name : "Deepak"
+  },
+
+  {
+    id : 5,
+    name : "Santana"
+  },
+]
 
 
 function App() {
   return(
-<SafeAreaView>
-  <Text style={{fontSize : 20}}> My Name is Gaurav Swarankar</Text>
-  <Button title='Continue'></Button>
-</SafeAreaView>
+<View>
+  <FlatList
+  data={users}
+  renderItem={({item}) => <Text>{item.name} </Text>}
+  />
+</View>
 
   );
 }
