@@ -1,19 +1,34 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {
   Button,
   SafeAreaView,
-  Text
+  Text,
+  TextInput,
+  View
 } from 'react-native';
 
+import Student from './components/Student';
 
-function App() {
-  return(
-<SafeAreaView>
-  <Text style={{fontSize : 20}}> My Name is Gaurav Swarankar</Text>
-  <Button title='Continue'></Button>
-</SafeAreaView>
 
-  );
+class App extends Component {
+  fruits = () => {
+    console.warn("Apple")
+  }
+
+  render() {
+    return (
+      <View>
+        <Text> Class Component </Text>
+        <TextInput placeholder='Enter your name' />
+        <Button title='Press Me' onPress={this.fruits} />
+        <Student />
+
+
+      </View>
+    )
+  }
+
+
 }
 
 
