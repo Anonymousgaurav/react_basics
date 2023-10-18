@@ -11,17 +11,24 @@ import Student from './components/Student';
 
 
 class App extends Component {
-  fruits = () => {
-    console.warn("Apple")
+  constructor() {
+    super();
+    this.state = {
+      name: "Anil"
+    }
+  }
+
+  updateName(studentName) {
+    this.setState({ name: studentName })
   }
 
   render() {
     return (
       <View>
-        <Text> Class Component </Text>
-        <TextInput placeholder='Enter your name' />
-        <Button title='Press Me' onPress={this.fruits} />
-        <Student />
+        <Text> {this.state.name} </Text>
+        <TextInput placeholder='Enter your name' onChangeText={(studentName) => this.updateName(studentName)} />
+        <Button title='Press Me' />
+        <Student name={this.state.name} />
 
 
       </View>
