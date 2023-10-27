@@ -1,5 +1,5 @@
 
-1. components in React Native
+1. Components in React Native
 2. Class Components
 3. Components in Loop with Flat List
 4. Flat List
