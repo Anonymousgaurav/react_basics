@@ -9,6 +9,8 @@
 8. static grid
 9. useEffect
 
+![Uploading Screenshot 2023-10-30 at 11.03.13 AM.png…]()
+
 
 
 
