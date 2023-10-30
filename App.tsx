@@ -18,6 +18,8 @@ const [selectedRadio,setSelectedRadio] = useState(1);
   return (
     <SafeAreaView style={styles.main}>
       <Text style={{ fontSize: 20 }}> Radio Buttons in React Native</Text>
+
+
       <TouchableOpacity onPress={() => setSelectedRadio(1)}>
         <View style={styles.radioWrapper}>
           <View style={styles.radio}>
@@ -30,6 +32,7 @@ const [selectedRadio,setSelectedRadio] = useState(1);
           <Text style={styles.radioText}>  Radio 1 </Text>
         </View>
       </TouchableOpacity>
+      
 
       <TouchableOpacity onPress={() => setSelectedRadio(2)}>
         <View style={styles.radioWrapper}>
