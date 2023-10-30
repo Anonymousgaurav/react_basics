@@ -9,7 +9,7 @@
 8. static grid
 9. useEffect
 
-![Uploading Screenshot 2023-10-30 at 11.03.13 AM.png…]()
+<img width="328" alt="Screenshot 2023-10-30 at 11 03 13 AM" src="https://github.com/Anonymousgaurav/react_basics/assets/26230006/f9e2364d-d8ab-438e-991c-24b499f19b21">
 
 
 
