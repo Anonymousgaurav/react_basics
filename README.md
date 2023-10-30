@@ -8,6 +8,10 @@
 7. state props
 8. static grid
 9. useEffect
+10. Life Cycle Method
+11. Component Did Update
+12. Show/Hide Component
+13. Radio Buttons
 
 
 
