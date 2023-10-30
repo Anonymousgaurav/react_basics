@@ -9,6 +9,7 @@
 8. static grid
 9. useEffect
 
+<img width="328" alt="Screenshot 2023-10-30 at 10 47 55 AM" src="https://github.com/Anonymousgaurav/react_basics/assets/26230006/827e6b48-f61a-4853-898a-22a265c8ad9d">
 
 
 
