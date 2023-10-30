@@ -12,6 +12,7 @@
 
 
 
+<img width="328" alt="Screenshot 2023-10-30 at 12 19 57 PM" src="https://github.com/Anonymousgaurav/react_basics/assets/26230006/79051203-0267-4d2a-8635-013d8c901c63">
 
 - [React Native Website](https://reactnative.dev) - learn more about React Native.
 - [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
