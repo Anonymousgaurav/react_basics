@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import {
   View,
   Text,
-  ScrollView
+  ScrollView,
+  FlatList
 } from 'react-native';
 
 
@@ -23,15 +24,21 @@ function App() {
 
   return (
     <ScrollView>
-      <Text style={{ fontSize: 20 }}> Api Call In List View </Text>
+      <Text style={{ fontSize: 20 }}> Api Call In Flat List View </Text>
       {
-        data.length ? data.map((item: any) => <View style={{ padding: 10, borderBottomColor: "#ccc", borderBottomWidth: 1 }}>
-          <Text style={{ fontSize: 20, backgroundColor: "#ddd", padding: 10 }}> Id : {item.id} </Text>
-          <Text style={{ fontSize: 20, padding: 10 }}> Title : {item.title} </Text>
-          <Text style={{ fontSize: 20 }}> Body : {item.body} </Text>
+        data.length ?
+        <FlatList
+        data={data}
+        renderItem={({item}) =>
+         <View style={{borderBottomColor:"orange",borderBottomWidth: 1,padding:10}}>
+                    <Text style={{ fontSize: 20,marginBottom: 10 }}> {item.id} </Text>
+                    <Text style={{ fontSize: 18,marginBottom:5 }}> {item.title} </Text>
+                    <Text style={{ fontSize: 16 }}> {item.body} </Text>
+
 
         </View>
-        )
+       }
+        />
           : null
       }
     </ScrollView>
