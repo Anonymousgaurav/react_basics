@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Button,
   SafeAreaView,
@@ -7,11 +7,29 @@ import {
 
 
 function App() {
-  return(
-<SafeAreaView>
-  <Text style={{fontSize : 20}}> My Name is Gaurav Swarankar</Text>
-  <Button title='Continue'></Button>
-</SafeAreaView>
+
+  const data = {
+    "name": "priya",
+    age: 25,
+    email: "priya@gmail.com"
+  }
+  const saveAPIData = async () => {
+    const url = "http://localhost:3000/users";
+    let result = await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data)
+    })
+    result = await result.json();
+    console.warn(result);
+  }
+
+
+  return (
+    <SafeAreaView>
+      <Text style={{ fontSize: 20 }}> Post API Call</Text>
+      <Button title='Save Data' onPress={saveAPIData}/>
+    </SafeAreaView>
 
   );
 }
